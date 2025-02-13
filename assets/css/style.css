@@ -378,10 +378,15 @@ body {
   margin-inline-start: -8px;
 }
 
+.logo .logo-image {
+  width: 350px;  /* Increased the image size */
+  height: auto;
+  margin-right: 15px;  /* Adjust space between image and text */
+}
+
+/* Removed the previous rotation effect */
 .logo ion-icon {
-  color: var(--coquelicot);
-  font-size: 40px;
-  transform: rotate(90deg) translate(-2px, -5px);
+  display: none;
 }
 
 .nav-open-btn {
@@ -1411,5 +1416,12 @@ body {
   .footer-top .container { grid-template-columns: 1fr 0.6fr 0.9fr 1fr; }
 
 }
+
+
+
+
+
+
+
 
 
