@@ -49,7 +49,7 @@
       <a href="#" class="logo">
         <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
 
-        <span class="span">Fitlife</span>
+        <span class="span">Sculpt Fitness</span>
       </a>
 
       <nav class="navbar" data-navbar>
@@ -76,10 +76,7 @@
             <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
           </li>
 
-          <li>
-            <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
-          </li>
-
+         
         </ul>
 
       </nav>
@@ -119,9 +116,10 @@
             <h1 class="h1 hero-title">Work Hard To Get Better Life</h1>
 
             <p class="section-text">
-              Duis mollis felis quis libero dictum vehicula. Duis dictum lorem mi, a faucibus nisi eleifend eu.
+              We're here to help you transform your body, unlock your potential, and live life to the fullest.
             </p>
-
+            
+           
             <a href="#" class="btn btn-primary">Get Started</a>
 
           </div>
@@ -172,17 +170,21 @@
 
             <p class="section-subtitle">About Us</p>
 
-            <h2 class="h2 section-title">Welcome To Our Fitness Gym</h2>
+            <h2 class="h2 section-title">Welcome To Our Sculpt Fitness Gym</h2>
 
             <p class="section-text">
-              Nam ut hendrerit leo. Aenean vel ipsum nunc. Curabitur in tellus vitae nisi aliquet dapibus non et erat.
-              Pellentesque
-              porta sapien non accumsan dignissim curabitur sagittis nulla sit amet dolor feugiat.
+              At Sculpt Fitness, we are more than just a gym—we are a community of passionate individuals committed to fitness and wellness.
+               Our mission is to provide a supportive environment where everyone, no matter their fitness level, can thrive.
             </p>
 
             <p class="section-text">
-              Integer placerat vitae metus posuere tincidunt. Nullam suscipit ante ac aliquet viverra vestibulum ante
-              ipsum primis.
+              With top equipment, expert trainers, and personalized programs, we help you achieve your fitness goals and build confidence.
+               Join our fitness family and unlock your full potential!
+            </p>
+
+            <p class="section-text">
+              Join us and become part of a fitness family where your success is our priority.
+               Together, we will help you unlock your full potential.
             </p>
 
             <div class="wrapper">
@@ -190,11 +192,11 @@
               <div class="about-coach">
 
                 <figure class="coach-avatar">
-                  <img src="./assets/images/about-coach.jpg" width="65" height="65" loading="lazy" alt="Trainer">
+                  <img src="./assets/images/about-coach.jpeg" width="65" height="65" loading="lazy" alt="Trainer">
                 </figure>
 
                 <div>
-                  <h3 class="h3 coach-name">Denis Robinson</h3>
+                  <h3 class="h3 coach-name">Deepak </h3>
 
                   <p class="coach-title">Our Coach</p>
                 </div>
@@ -220,24 +222,26 @@
 
       <section class="section video" aria-label="video">
         <div class="container">
-
-          <div class="video-card has-before has-bg-image"
-            style="background-image: url('./assets/images/video-banner.jpg')">
-
-            <h2 class="h2 card-title">Explore Fitness Life</h2>
-
-            <button class="play-btn" aria-label="play video">
-              <ion-icon name="play-sharp" aria-hidden="true"></ion-icon>
-            </button>
-
-            <a href="#" class="btn-link has-before">Watch More</a>
-
-          </div>
-
+            <div class="video-card has-before has-bg-image"
+                style="background-image: url('./assets/images/video-banner.jpg')" onclick="playVideo()">
+                
+                <h2 class="h2 card-title">Explore Fitness Life</h2>
+                
+                <button class="play-btn" aria-label="play video">
+                    <ion-icon name="play-sharp" aria-hidden="true"></ion-icon>
+                </button>
+    
+                <a href="#" class="btn-link has-before">Watch More</a>
+    
+                <!-- Video element hidden initially -->
+                <video id="fitnessVideo" style="display:none; width:100%;" controls>
+                    <source src="./assets/images/video-gym1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
-      </section>
-
-
+    </section>
+    
 
 
 
@@ -275,7 +279,7 @@
                   </div>
 
                   <p class="card-text">
-                    Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
+                    Weight lifting is a powerful way to build strength, increase muscle mass, and improve overall fitness.
                   </p>
 
                   <div class="card-progress">
@@ -317,7 +321,7 @@
                   </div>
 
                   <p class="card-text">
-                    Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
+                    Cardio and strength training together enhance endurance, boost metabolism, and promote balanced fitness.
                   </p>
 
                   <div class="card-progress">
@@ -359,7 +363,7 @@
                   </div>
 
                   <p class="card-text">
-                    Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
+                    Power yoga combines strength, flexibility, and mindfulness for a full-body workout and mental clarity.
                   </p>
 
                   <div class="card-progress">
@@ -401,7 +405,7 @@
                   </div>
 
                   <p class="card-text">
-                    Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
+                    The Fitness Pack is your all-in-one solution for building strength, endurance, and flexibility.
                   </p>
 
                   <div class="card-progress">
@@ -452,7 +456,7 @@
                   <img src="./assets/images/blog-1.jpg" width="440" height="270" loading="lazy"
                     alt="Going to the gym for the first time" class="img-cover">
 
-                  <time class="card-meta" datetime="2022-07-07">7 July 2022</time>
+                  <time class="card-meta" datetime="2022-07-07">7 March 2025</time>
                 </div>
 
                 <div class="card-content">
@@ -462,11 +466,13 @@
                   </h3>
 
                   <p class="card-text">
-                    Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac
-                    habitasse platea dictumst.
+                    Starting at the gym can be intimidating, but it’s a great step! Keep it simple—start with easy exercises and ask for help if needed.
+                     Wear comfortable clothes, stay hydrated, and take it slow. Focus on your own progress and enjoy the journey! Remember, consistency is key, 
+                     and every small step brings you closer to your goals. Believe in yourself, and you'll see the results over time.
                   </p>
 
                   <a href="#" class="btn-link has-before">Read More</a>
+                 
 
                 </div>
 
@@ -480,22 +486,24 @@
                   <img src="./assets/images/blog-2.jpg" width="440" height="270" loading="lazy"
                     alt="Parturient accumsan cacus pulvinar magna" class="img-cover">
 
-                  <time class="card-meta" datetime="2022-07-07">7 July 2022</time>
+                  <time class="card-meta" datetime="2025-02-13">7 March 2025</time>
                 </div>
 
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Parturient accumsan cacus pulvinar magna</a>
+                    <a href="#" class="card-title">How to Stay Motivated to Work Out</a>
                   </h3>
 
                   <p class="card-text">
-                    Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac
-                    habitasse platea dictumst.
+                    Staying motivated can be challenging, but setting small goals and tracking your progress helps keep you focused. 
+                    Find a workout buddy to make exercise more fun and hold each other accountable.
+                     Mixing up your routine with different exercises prevents boredom and keeps things exciting. 
+                     Most importantly, remember to reward yourself for hitting milestones—it keeps the motivation going!
                   </p>
 
                   <a href="#" class="btn-link has-before">Read More</a>
-
+                  
                 </div>
 
               </div>
@@ -508,18 +516,23 @@
                   <img src="./assets/images/blog-3.jpg" width="440" height="270" loading="lazy"
                     alt="Risus purus namien parturient accumsan cacus" class="img-cover">
 
-                  <time class="card-meta" datetime="2022-07-07">7 July 2022</time>
+                  <time class="card-meta" datetime="2022-07-07">7 March 2025</time>
                 </div>
 
                 <div class="card-content">
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Risus purus namien parturient accumsan cacus</a>
+                    <a href="#" class="card-title">The Importance of Nutrition in Your Fitness Journey</a>
                   </h3>
 
                   <p class="card-text">
-                    Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac
-                    habitasse platea dictumst.
+                    Nutrition plays a key role in your fitness journey. 
+                    Eating the right foods helps fuel your workouts, boosts energy, and aids in recovery.
+                     Make sure to include a balance of protein, healthy fats, and complex carbs to support
+                      muscle growth and overall health. Proper hydration is also essential for peak performance.
+                       A healthy diet works hand-in-hand with exercise to help you reach your fitness goals faster.
+
+
                   </p>
 
                   <a href="#" class="btn-link has-before">Read More</a>
@@ -537,7 +550,7 @@
     </article>
   </main>
 
-
+        
 
 
 
@@ -555,11 +568,11 @@
           <a href="#" class="logo">
             <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
 
-            <span class="span">Fitlife</span>
+            <span class="span">Sculpt Fitness</span>
           </a>
 
           <p class="footer-brand-text">
-            Etiam suscipit fringilla ullamcorper sed malesuada urna nec odio.
+            Strength begins where comfort ends. Keep pushing.
           </p>
 
           <div class="wrapper">
@@ -597,15 +610,15 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">About Us</a>
+            <a href="#about" class="footer-link">About Us</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Classes</a>
+            <a href="#class" class="footer-link">Classes</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Blog</a>
+            <a href="#blog" class="footer-link">Blog</a>
           </li>
 
           <li>
@@ -626,7 +639,7 @@
             </div>
 
             <address class="address footer-link">
-              1247/Plot No. 39, 15th Phase, Colony, Kukatpally, Hyderabad
+              #1562, 2nd Floor, 8th Cross Above Kotak Bank, Chandra Layout Bangalore-560040
             </address>
           </li>
 
@@ -636,9 +649,9 @@
             </div>
 
             <div>
-              <a href="tel:18001213637" class="footer-link">1800-121-3637</a>
+              <a href="tel:+917892131996" class="footer-link">+91 789 213-1996</a>
 
-              <a href="tel:+915552348765" class="footer-link">+91 555 234-8765</a>
+              <!-- <a href="tel:+917892131996" class="footer-link">+91 789 213-1996</a> -->
             </div>
           </li>
 
@@ -648,9 +661,9 @@
             </div>
 
             <div>
-              <a href="mailto:info@fitlife.com" class="footer-link">info@fitlife.com</a>
+              <a href="mailto:info@fitlife.com" class="footer-link">sculpt.fitness@gmail.com</a>
 
-              <a href="mailto:services@fitlife.com" class="footer-link">services@fitlife.com</a>
+              <!-- <a href="mailto:services@fitlife.com" class="footer-link">services@fitlife.com</a> -->
             </div>
           </li>
 
@@ -689,9 +702,11 @@
               </li>
 
               <li>
-                <a href="#" class="social-link">
+                <a href="https://twitter.com/sculptfitness" class="social-link" target="_blank">
                   <ion-icon name="logo-twitter"></ion-icon>
                 </a>
+                
+                
               </li>
 
             </ul>
@@ -706,7 +721,7 @@
       <div class="container">
 
         <p class="copyright">
-          &copy; 2022 Fitlife. All Rights Reserved By <a href="#" class="copyright-link">codewithsadee.</a>
+          &copy;  2025 SCULPT FITNESS. All rights reserved.</a>
         </p>
 
         <ul class="footer-bottom-list">
