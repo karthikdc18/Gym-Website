@@ -379,7 +379,7 @@ body {
 }
 
 .logo .logo-image {
-  width: 350px;  /* Increased the image size */
+  width: 300px;  /* Increased the image size */
   height: auto;
   margin-right: 15px;  /* Adjust space between image and text */
 }
@@ -805,9 +805,21 @@ body {
   gap: 50px;
 }
 
-.footer .logo { color: var(--white); }
+.footer .logo {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+}
 
-.footer-brand-text { margin-block: 25px; }
+.footer .logo img {
+  width: 300px; /* Increase the size of the image */
+  height: auto; /* Maintains aspect ratio */
+  margin-right: 10px; /* Space between the logo image and the text */
+}
+
+.footer-brand-text {
+  margin-block: 25px;
+}
 
 .footer-top .wrapper {
   display: flex;
@@ -815,6 +827,7 @@ body {
   align-items: flex-start;
   gap: 20px;
 }
+
 
 .footer-brand-list li:not(:last-child) { margin-block-end: 15px; }
 
