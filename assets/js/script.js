@@ -61,29 +61,3 @@ const playVideo = function () {
 
 // Add event listener to the video card and play button
 addEventOnElem([videoCard, playButton], "click", playVideo);
-
-/**
- * EmailJS Contact Form functionality
- */
-
-// Initialize EmailJS with your User ID
-emailjs.init("FceqtsZ4KPtL0tsTy");  // Your EmailJS User ID
-
-// Form submission
-const form = document.getElementById("contact-form");
-
-form.addEventListener("submit", function(event) {
-  event.preventDefault();  // Prevent the default form submission
-
-  console.log("Form submitted!");
-
-  // Send form data to EmailJS
-  emailjs.sendForm("service_07fglre", "template_hny3imk", form)  // Service ID and Template ID, use form here
-    .then(function(response) {
-      console.log("Success", response);  // Log success response
-      alert("Your message has been sent successfully!");
-    }, function(error) {
-      console.error("Error", error);  // Log error response
-      alert("Oops! Something went wrong. Please try again.");
-    });
-});
